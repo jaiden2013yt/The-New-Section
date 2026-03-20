@@ -7,8 +7,8 @@ const popcornDisplay = document.getElementById("popcornDisplay")
 function popcornLoop(p) {
 
   p.setup = function() {
-    let canvas = p.createCanvas(400, 700);
-    canvas.parent(popcornDisplay);
+    let canvas = p.createCanvas(400, 700)
+    canvas.parent(popcornDisplay)
   }
   
   p.draw = function () {
