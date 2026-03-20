@@ -10,6 +10,8 @@ function popcornLoop(p) {
     p.createCanvas(400, 700 popcornDisplay)
   }
   
-  
+  p.draw = function () {
+    p.square(200, 200, 40)
+  }
 }
  new p5(popcornLoop)
