@@ -43,7 +43,7 @@ function popcornLoop(p) {
   }
   
   function newPopcorn() {
-    p.circle(p.mouseX, p.mouseY, 250)
+    p.Sprite(p.mouseX, p.mouseY, 250)
   }
 }
  new p5(popcornLoop)
