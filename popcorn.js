@@ -61,6 +61,7 @@ window.draggingElement = -1
       })
     )
     console.log(draggingElement)
+    popcornList[draggingElement].color = "green"
   }
 }
  new p5(popcornLoop)
