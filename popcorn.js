@@ -11,7 +11,7 @@ function popcornLoop(p) {
     canvas.parent(popcornDisplay)
     canvas.style.touchAction = "none"
 
-    let box = new sprite
+    let box = new sprite()
   }
   
   p.draw = function () {
