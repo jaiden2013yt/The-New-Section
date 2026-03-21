@@ -16,6 +16,8 @@ function popcornLoop(p) {
     p.world.gravity.y = 10
 
     let floor = new p.Sprite(p.width/2, p.height, 700, 15, p.STATIC)
+
+    let mousePressStart;
   }
   
   p.draw = function () {
