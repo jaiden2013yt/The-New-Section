@@ -29,6 +29,7 @@ window.draggingElement = -1
 
     if(p.mouseIsPressed === false) {
       p.fill("crimson")
+      draggingElement = -1
     } 
 
    p.circle(p.mouseX, p.mouseY, 5)
@@ -48,7 +49,7 @@ window.draggingElement = -1
     if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 3) {
       newPopcorn()
     }
-    draggingElement = -1
+    
   }
   
   function newPopcorn() {
