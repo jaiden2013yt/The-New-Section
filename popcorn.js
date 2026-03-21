@@ -15,7 +15,7 @@ window.draggingElement = -1
 
     let box = new p.Sprite()
 
-    p.world.gravity.y = 10
+    p.world.gravity.y = 25
 
     let floor = new p.Sprite(p.width/2, p.height, 700, 15, p.STATIC)
 
