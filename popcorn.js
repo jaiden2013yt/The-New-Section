@@ -62,7 +62,7 @@ window.popcornList = [];
         return element.mouse.hovering()
       })
     )
-    console.log("draggingElement")
+    console.log(draggingElement)
   }
 }
  new p5(popcornLoop)
