@@ -27,7 +27,7 @@ function popcornLoop(p) {
     if(p.mouseIsPressed === false) {
       p.fill("crimson")
     } 
-    newPopcorn()
+    //newPopcorn()
 
 
 
@@ -38,9 +38,9 @@ function popcornLoop(p) {
    // p.circle(p.mouseX, p.mouseY, 10)
   }
 
-  //p.mouseClicked = function () {
-  //  p.newPopcorn()
-  //}
+  p.mouseClicked = function () {
+    newPopcorn()
+  }
   
   function newPopcorn() {
     p.circle(p.mouseX, p.mouseY, 10)
