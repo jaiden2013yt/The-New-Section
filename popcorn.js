@@ -28,7 +28,7 @@ function popcornLoop(p) {
       p.fill("crimson")
     }
 
-    p.circle(p.mouseX, p.mouseY, 10)
+   // p.circle(p.mouseX, p.mouseY, 10)
   }
 
   p.mouseClicked = function () {
@@ -36,7 +36,7 @@ function popcornLoop(p) {
   }
   
   p.newPopcorn = function () {
-    return new p.Sprite(p.mouseX, p.mouseY, 10)
+    p.circle(p.mouseX, p.mouseY, 10)
   }
 }
  new p5(popcornLoop)
