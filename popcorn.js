@@ -26,14 +26,21 @@ function popcornLoop(p) {
 
     if(p.mouseIsPressed === false) {
       p.fill("crimson")
+    } else {
+      p.newPopcorn()
+
+
+
+      
     }
 
+    
    // p.circle(p.mouseX, p.mouseY, 10)
   }
 
-  p.mouseClicked = function () {
-    p.newPopcorn()
-  }
+  //p.mouseClicked = function () {
+  //  p.newPopcorn()
+  //}
   
   p.newPopcorn = function () {
     p.circle(p.mouseX, p.mouseY, 10)
