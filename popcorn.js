@@ -9,6 +9,7 @@ function popcornLoop(p) {
   p.setup = function() {
     let canvas = p.createCanvas(700, 400)
     canvas.parent(popcornDisplay)
+    canvas.style.touchAction = "none"
   }
   
   p.draw = function () {
