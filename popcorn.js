@@ -11,21 +11,6 @@ function popcornLoop(p) {
     canvas.parent(popcornDisplay)
     canvas.style.touchAction = "none"
 
-    // world setup
-    p.world.gravity.y = 10;
-
-    // ball
-    ball = new p.Sprite();
-    ball.diameter = 40;
-    ball.y = 50;
-    ball.bounciness = 0.8;
-
-    // ground
-    ground = new p.Sprite();
-    ground.y = 350;
-    ground.w = 600;
-    ground.h = 20;
-    ground.collider = 'static'; // important
   }
   
   p.draw = function () {
