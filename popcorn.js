@@ -43,6 +43,7 @@ window.popcornList = [];
 
   p.mousePressed = function () {
     mousePressStart = {x: p.mouseX, y: p.mouseY}
+    isDragging()
   }
   p.mouseReleased = function () {
     if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 3) {
