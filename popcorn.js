@@ -24,9 +24,9 @@ window.draggingElement = -1
     let rightWall  = new p.Sprite(p.width+(wallWidth/2), p.height/2, wallWidth, p.height, p.STATIC) // off screen
     
     // hard coded values to prevent issues and to be better and more stable
-    let cookerLeft  = new p.Sprite(65, 290, 5, 125, p.STATIC)
-    let cookerRight = new p.Sprite(160, 290, 5, 125, p.STATIC)
-  
+    let cookerLeft   = new p.Sprite(65,   290, 5,  125, p.STATIC)
+    let cookerRight  = new p.Sprite(160,  290, 5,  125, p.STATIC)
+    let cookerBottom = new p.Sprite(47.5, 0,   95, 125, p.STATIC)
   }
   
   p.draw = function () {
