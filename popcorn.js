@@ -22,7 +22,7 @@ function popcornLoop(p) {
       p.fill("crimson")
     }
 
-    p.circle(p.mouseX, p.mouseY, 40)
+    p.circle(p.mouseX, p.mouseY, 10)
   }
 }
  new p5(popcornLoop)
