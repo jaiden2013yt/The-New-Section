@@ -38,7 +38,7 @@ function popcornLoop(p) {
    // p.circle(p.mouseX, p.mouseY, 10)
   }
 
-  p.mouseClicked = function () {
+  p.mouseReleased = function () {
     newPopcorn()
   }
   
