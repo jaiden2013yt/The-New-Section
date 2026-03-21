@@ -30,15 +30,13 @@ window.popcornList = [];
     if(p.mouseIsPressed === false) {
       p.fill("crimson")
     } 
-    //newPopcorn()
 
-
-
-      
-    
-
-    
    p.circle(p.mouseX, p.mouseY, 5)
+
+    if(! draggingElement === -1) {
+      popcornList[draggingElement].vel.x += p.mouseX - popcornList[draggingElement].x
+      
+    }
   }
 
   p.mousePressed = function () {
