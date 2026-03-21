@@ -11,17 +11,21 @@ function popcornLoop(p) {
     canvas.parent(popcornDisplay)
     canvas.style.touchAction = "none"
 
-    	world.gravity.y = 10;
+    // world setup
+    p.world.gravity.y = 10;
 
-	p.ball = new Sprite();
-	p.ball.diameter = 50;
-	p.ball.y = 30;
+    // ball
+    ball = new p.Sprite();
+    ball.diameter = 40;
+    ball.y = 50;
+    ball.bounciness = 0.8;
 
-	p.floor = new Sprite();
-	p.floor.y = 190;
-	p.floor.w = 238;
-	p.floor.h = 5;
-	p.floor.physics = STATIC;
+    // ground
+    ground = new p.Sprite();
+    ground.y = 350;
+    ground.w = 600;
+    ground.h = 20;
+    ground.collider = 'static'; // important
   }
   
   p.draw = function () {
