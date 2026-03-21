@@ -57,7 +57,7 @@ window.draggingElement = -1
   function isDragging() {
     draggingElement = popcornList.indexOf(
       popcornList.find((element) => {
-        return element.mouse.hovering
+        return Math.hypot(p.mouseX - element.x, p.mouseY - element.y) < 10
       })
     )
     console.log(draggingElement, typeof(draggingElement), popcornList)
