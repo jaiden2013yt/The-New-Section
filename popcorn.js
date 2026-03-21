@@ -56,9 +56,11 @@ window.popcornList = [];
   }
 
   function isDragging() {
-    draggingElement = popcornList.find((element) => {
-      return element.mouse.hovering();
-    })
+    draggingElement = popcornList.indexOf(
+      popcornList.find((element) => {
+        return element.mouse.hovering()
+      })
+    )
     console.log("draggingElement")
   }
 }
