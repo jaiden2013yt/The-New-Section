@@ -48,6 +48,7 @@ window.draggingElement = -1
     if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 3) {
       newPopcorn()
     }
+    draggingElement = -1
   }
   
   function newPopcorn() {
