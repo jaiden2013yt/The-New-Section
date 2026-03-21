@@ -17,6 +17,12 @@ function popcornLoop(p) {
 
     p.fill("aqua")
     p.text(p.mouseIsPressed, p.mouseX, p.mouseY)
+
+    if(p.mouseIsPressed === false) {
+      p.fill("crimson")
+    }
+
+    p.circle(p.mouseX, p.mouseY, 40)
   }
 }
  new p5(popcornLoop)
