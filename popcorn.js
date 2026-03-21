@@ -36,8 +36,8 @@ window.draggingElement = -1
 
     if(draggingElement !== -1) {
       //alert("wooo")
-      popcornList[draggingElement].vel.x += (p.mouseX - popcornList[draggingElement].x)/25
-      popcornList[draggingElement].vel.y += (p.mouseY - popcornList[draggingElement].y)/25
+      popcornList[draggingElement].vel.x += (p.mouseX - popcornList[draggingElement].x)/75
+      popcornList[draggingElement].vel.y += (p.mouseY - popcornList[draggingElement].y)/75
     }
   }
 
