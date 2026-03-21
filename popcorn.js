@@ -16,7 +16,7 @@ function popcornLoop(p) {
     p.background("white")
 
     p.fill("aqua")
-    p.circle(p.mouseX, p.mouseY, 10)
+    p.text(p.mouseButton p.mouseX, p.mouse)
   }
 }
  new p5(popcornLoop)
