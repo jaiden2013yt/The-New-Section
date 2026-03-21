@@ -38,6 +38,10 @@ window.draggingElement = -1
       //alert("wooo")
       popcornList[draggingElement].vel.x += (p.mouseX - popcornList[draggingElement].x)/200
       popcornList[draggingElement].vel.y += (p.mouseY - popcornList[draggingElement].y)/200
+
+      p.stroke("red")
+      p.line(popcornList[draggingElement].x, popcornList[draggingElement].y, p.mouseX, p.mouseY)
+      p.stroke("black")
     }
   }
 
