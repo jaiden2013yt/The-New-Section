@@ -61,6 +61,7 @@ window.draggingElement = -1
     SP.bounciness = 0.25
     SP.mass = 10
     SP.drag = 5
+    SP.rotationDrag = 2
     popcornList.push(SP)
   }
 
