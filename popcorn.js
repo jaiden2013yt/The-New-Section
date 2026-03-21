@@ -27,7 +27,7 @@ window.draggingElement = -1
     let cookerOriginY = p.width-100
 
     let cookerRight = new p.Sprite((cookerOriginX-50)+wallWidth, cookerOriginY, wallWidth, 75, p.STATIC)
-  
+    let cool = new p.Sprite(65, 300, 15, 75, p.STATIC)
   
   }
   
