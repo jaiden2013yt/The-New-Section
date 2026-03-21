@@ -32,11 +32,11 @@ function popcornLoop(p) {
   }
 
   p.doubleClicked() = function () {
-    p.newPopcorn()
+    //p.newPopcorn()
   }
   
-  p.newPopcorn = function () {
-    return new p.Sprite(p.mouseX, p.mouseY, 10)
-  }
+  //p.newPopcorn = function () {
+    //return new p.Sprite(p.mouseX, p.mouseY, 10)
+  //}
 }
  new p5(popcornLoop)
