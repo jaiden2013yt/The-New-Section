@@ -16,7 +16,7 @@ function popcornLoop(p) {
     p.background("white")
 
     p.fill("aqua")
-    p.text(p.mouseIsPressed, p.mouseX, p.mouseY)
+    // p.text(p.mouseIsPressed, p.mouseX, p.mouseY)
 
     if(p.mouseIsPressed === false) {
       p.fill("crimson")
