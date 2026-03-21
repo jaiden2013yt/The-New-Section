@@ -13,9 +13,9 @@ function popcornLoop(p) {
 
     let box = new p.Sprite()
 
-    //world.gravity.y = 10
+    p.world.gravity.y = 10
 
-    let floor = new p.Sprite(width/2, height, 700, 15)
+    let floor = new p.Sprite(p.width/2, p.height, 700, 15)
   }
   
   p.draw = function () {
