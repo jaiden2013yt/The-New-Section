@@ -60,7 +60,7 @@ window.draggingElement = -1
         return element.mouse.hovering()
       })
     )
-    console.log(draggingElement)
+    console.log(draggingElement, typeof(draggingElement), popcornList)
     popcornList[Number(draggingElement)].color = "green"
   }
 }
