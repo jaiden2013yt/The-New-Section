@@ -61,7 +61,7 @@ window.draggingElement = -1
       })
     )
     console.log(draggingElement, typeof(draggingElement), popcornList)
-    alert("popcornList")
+    alert(popcornList)
     popcornList[Number(draggingElement)].color = "green"
   }
 }
