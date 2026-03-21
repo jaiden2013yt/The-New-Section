@@ -5,7 +5,9 @@ this is the js file for the popcorn thing!
 const popcornDisplay = document.getElementById("popcornDisplay")
 
 function popcornLoop(p) {
-
+let mousePressStart;
+let popcornList = [];
+  
   p.setup = function() {
     let canvas = p.createCanvas(700, 400)
     canvas.parent(popcornDisplay)
@@ -17,8 +19,6 @@ function popcornLoop(p) {
 
     let floor = new p.Sprite(p.width/2, p.height, 700, 15, p.STATIC)
 
-    let mousePressStart;
-    let popcornList = [];
   }
   
   p.draw = function () {
