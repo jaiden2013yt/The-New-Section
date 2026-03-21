@@ -12,7 +12,10 @@ function popcornLoop(p) {
   }
   
   p.draw = function () {
-    p.square(200, 200, 40)
+    p.background("white")
+
+    p.fill("aqua")
+    p.circle(p.mouseX, p.mouseY, 10)
   }
 }
  new p5(popcornLoop)
