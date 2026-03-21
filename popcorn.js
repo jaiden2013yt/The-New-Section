@@ -54,5 +54,11 @@ window.popcornList = [];
     const SP = new p.Sprite(p.mouseX, p.mouseY, 10)
     popcornList.push(SP)
   }
+
+  function isDragging() {
+    draggingElement = popcornList.find((element) => {
+      return element.mouse.hovering();
+    })
+  }
 }
  new p5(popcornLoop)
