@@ -23,10 +23,10 @@ window.draggingElement = -1
     let leftWall   = new p.Sprite(-(wallWidth/2), p.height/2, wallWidth, p.height, p.STATIC) // off screen
     let rightWall  = new p.Sprite(p.width+(wallWidth/2), p.height/2, wallWidth, p.height, p.STATIC) // off screen
   
-    let cookerOriginX = 100
-    let cookerOriginY = p.width-100
+    //let cookerOriginX = 100
+    //let cookerOriginY = p.width-100
 
-    let cookerRight = new p.Sprite((cookerOriginX-50)+wallWidth, cookerOriginY, wallWidth, 75, p.STATIC)
+    //let cookerRight = new p.Sprite((cookerOriginX-50)+wallWidth, cookerOriginY, wallWidth, 75, p.STATIC)
     let cool = new p.Sprite(65, 300, 15, 75, p.STATIC)
   
   }
