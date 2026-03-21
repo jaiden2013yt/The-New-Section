@@ -18,6 +18,7 @@ function popcornLoop(p) {
     let floor = new p.Sprite(p.width/2, p.height, 700, 15, p.STATIC)
 
     let mousePressStart;
+    let popcornList = [];
   }
   
   p.draw = function () {
@@ -50,7 +51,7 @@ function popcornLoop(p) {
   }
   
   function newPopcorn() {
-    new p.Sprite(p.mouseX, p.mouseY, 10)
+    popcornList.push(new p.Sprite(p.mouseX, p.mouseY, 10))
   }
 }
  new p5(popcornLoop)
