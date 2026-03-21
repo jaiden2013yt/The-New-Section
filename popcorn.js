@@ -44,7 +44,7 @@ function popcornLoop(p) {
     mousePressStart = {x: p.mouseX, y: p.mouseY}
   }
   p.mouseReleased = function () {
-    if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 20) {
+    if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 3) {
       newPopcorn()
     }
   }
