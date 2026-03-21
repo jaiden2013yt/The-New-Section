@@ -12,6 +12,8 @@ function popcornLoop(p) {
     canvas.style.touchAction = "none"
 
     let box = new p.Sprite()
+
+    p.world.gravity.y = 10
   }
   
   p.draw = function () {
