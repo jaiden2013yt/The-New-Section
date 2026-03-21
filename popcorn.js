@@ -17,8 +17,8 @@ window.draggingElement = -1
 
     p.world.gravity.y = 25
 
-    let floor = new p.Sprite(p.width/2, p.height, 700, 15, p.STATIC)
-
+    let floor      = new p.Sprite(p.width/2, p.height, p.height, 15, p.STATIC)
+    let leftWall   = new p.Sprite(-7.5, p.height/2, 15, p.width, p.STATIC)
   }
   
   p.draw = function () {
