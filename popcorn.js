@@ -32,7 +32,7 @@ function popcornLoop(p) {
   }
 
   p.doubleClicked() = function () {
-    newPopcorn()
+    p.newPopcorn()
   }
   
   p.newPopcorn = function () {
