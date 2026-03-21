@@ -57,7 +57,7 @@ window.draggingElement = -1
   function isDragging() {
     draggingElement = popcornList.indexOf(
       popcornList.find((element) => {
-        return element.mouse.hovering()
+        return element.mouse.hovering
       })
     )
     console.log(draggingElement, typeof(draggingElement), popcornList)
