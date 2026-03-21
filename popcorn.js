@@ -55,6 +55,7 @@ window.draggingElement = -1
   function newPopcorn() {
     const SP = new p.Sprite(p.mouseX, p.mouseY, 10)
     SP.bounciness = 0.25
+    SP.mass = 10
     popcornList.push(SP)
   }
 
