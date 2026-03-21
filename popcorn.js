@@ -33,7 +33,8 @@ window.draggingElement = -1
 
    p.circle(p.mouseX, p.mouseY, 5)
 
-    if(!draggingElement === -1) {
+    if(draggingElement !== -1) {
+      alert("wooo")
       popcornList[draggingElement].vel.x += p.mouseX - popcornList[draggingElement].x
       
     }
