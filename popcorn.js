@@ -59,6 +59,7 @@ window.popcornList = [];
     draggingElement = popcornList.find((element) => {
       return element.mouse.hovering();
     })
+    console.log("draggingElement")
   }
 }
  new p5(popcornLoop)
