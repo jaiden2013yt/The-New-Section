@@ -21,6 +21,7 @@ window.draggingElement = -1
     
     let floor      = new p.Sprite(p.width/2, p.height, p.width, wallWidth, p.STATIC) //half visible
     let leftWall   = new p.Sprite(-(wallWidth/2), p.height/2, wallWidth, p.height, p.STATIC) // off screen
+    let rightWall  = new p.Sprite(p.width+(wallWidth/2), p.height/2, wallWidth, p.height, p.STATIC) // off screen
   }
   
   p.draw = function () {
