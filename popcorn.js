@@ -79,7 +79,7 @@ window.draggingElement = -1
     SP.rotationDrag = 2
 
     SP.image = "https://jaiden2013yt.github.io/The-New-Section/popcorn.png"
-    SP.image.scale = 0.2
+    SP.image.scale = 0.1
 
     SP.debug = true;
     popcornList.push(SP)
