@@ -17,6 +17,8 @@ window.draggingElement = -1
 
     p.world.gravity.y = 25
 
+    popcornImg = loadImage("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg");
+
     let wallWidth = 15
     
     let floor      = new p.Sprite(p.width/2, p.height, p.width, wallWidth, p.STATIC) //half visible
@@ -77,7 +79,7 @@ window.draggingElement = -1
     SP.drag = 5
     SP.rotationDrag = 2
 
-    SP.image = "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg"
+    SP.image = popcornImg
     popcornList.push(SP)
   }
 
