@@ -27,7 +27,7 @@ window.draggingElement = -1
     let cookerLeft   = new p.Sprite(65,    290, 5,  125, p.STATIC)
     let cookerRight  = new p.Sprite(160,   330, 5,  45,  p.STATIC)
     let cookerRight2 = new p.Sprite(160,   274, 5,  45,  p.STATIC)
-    let cookerLip    = new p.Sprite(160, 320, 30, 4,  p.STATIC)
+    let cookerLip    = new p.Sprite(170, 320, 20, 9,  p.STATIC)
     let cookerBottom = new p.Sprite(112.5, 400, 95, 100, p.STATIC)
     let cookerTop    = new p.Sprite(112.5, 244, 95, 15,  p.STATIC)
   }
