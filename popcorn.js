@@ -77,7 +77,7 @@ window.draggingElement = -1
     SP.drag = 5
     SP.rotationDrag = 2
 
-    SP.image = "https://jaiden2013.neocities.org/Images/popcornKernul.svg"
+    SP.image = "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg"
     popcornList.push(SP)
   }
 
