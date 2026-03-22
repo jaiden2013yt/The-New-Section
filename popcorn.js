@@ -31,6 +31,8 @@ window.draggingElement = -1
     cookerLip.rotation = 45
     let cookerBottom = new p.Sprite(112.5, 400, 95, 100, p.STATIC)
     let cookerTop    = new p.Sprite(112.5, 244, 95, 15,  p.STATIC)
+
+    let table        = new p.Sprite(600, 400, 95, 100, p.STATIC)
   }
   
   p.draw = function () {
