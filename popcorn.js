@@ -78,7 +78,7 @@ window.draggingElement = -1
     SP.drag = 5
     SP.rotationDrag = 2
 
-    SP.image = "https://jaiden2013yt.github.io/The-New-Section/popcorn.png"
+    SP.image = "https://jaiden2013yt.github.io/The-New-Section/Popcorn.png"
     SP.image.scale = 0.07
 
     //SP.debug = true;
