@@ -5,10 +5,13 @@ this is the js file for the popcorn thing!
 const popcornDisplay = document.getElementById("popcornDisplay")
 
 function popcornLoop(p) {
+  
 let mousePressStart;
 window.popcornList = [];
 window.draggingElement = -1
+  
   p.setup = function() {
+    
     let canvas = p.createCanvas(700, 400)
     canvas.parent(popcornDisplay)
     canvas.style.touchAction = "none"
@@ -37,20 +40,23 @@ window.draggingElement = -1
   }
   
   p.draw = function () {
+    //clear the srceen
     p.background("#FFDDDD")
 
+    //set the color of the mouse indicator
     p.fill("aqua")
-    // p.text(p.mouseIsPressed, p.mouseX, p.mouseY)
-
     if(p.mouseIsPressed === false) {
       p.fill("crimson")
       draggingElement = -1
     } 
 
+   //mouse indicator
    p.circle(p.mouseX, p.mouseY, 5)
 
     if(draggingElement !== -1) {
-      //alert("wooo")
+      //alert("in dragging element not -1")
+
+      //add the vector of the distsnce to the mouse cursor but scaled down (yes 200x , its what feels right to play) 
       popcornList[draggingElement].vel.x += (p.mouseX - popcornList[draggingElement].x)/200
       popcornList[draggingElement].vel.y += (p.mouseY - popcornList[draggingElement].y)/200
 
@@ -65,7 +71,7 @@ window.draggingElement = -1
     isDragging()
   }
   p.mouseReleased = function () {
-    if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 3) {
+    if (Math.hypot(p.mouseX-mousePressStart.x, p.mouseY-mousePressStart.y) < 3) { //if mouse hasnt move much durning the press, run this
       newPopcorn()
     }
     
@@ -73,10 +79,12 @@ window.draggingElement = -1
   
   function newPopcorn() {
     const SP = new p.Sprite(p.mouseX, p.mouseY, 10)
+
+    //physics properies
     SP.bounciness = 0.25
-    SP.mass = 10
-    SP.drag = 5
-    SP.rotationDrag = 2
+    SP.mass = 10 //weight
+    SP.drag = 5  //air resistance 
+    SP.rotationDrag = 2 //rotational friction
 
     SP.image = "https://jaiden2013yt.github.io/The-New-Section/Popcorn.png"
     SP.image.scale = 0.07 // we want it small, but the image i specified is large.
@@ -86,15 +94,19 @@ window.draggingElement = -1
   }
 
   function isDragging() {
+    //find the element being selected (if any)
     draggingElement = popcornList.indexOf(
       popcornList.find((element) => {
         console.log(element.x, element.y)
         return Math.hypot(p.mouseX - element.x, p.mouseY - element.y) < 10
       })
     )
+    /*
+    //tests for that
     console.log(draggingElement, typeof(draggingElement), popcornList)
-    //alert(popcornList)
+    alert(popcornList)
     popcornList[Number(draggingElement)].color = "green"
+    */
   }
 }
  new p5(popcornLoop)
