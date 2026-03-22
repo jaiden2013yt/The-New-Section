@@ -37,7 +37,7 @@ window.draggingElement = -1
   }
   
   p.draw = function () {
-    p.background("white")
+    p.background("#FFDDDD")
 
     p.fill("aqua")
     // p.text(p.mouseIsPressed, p.mouseX, p.mouseY)
