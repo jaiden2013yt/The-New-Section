@@ -79,7 +79,7 @@ window.draggingElement = -1
     SP.rotationDrag = 2
 
     SP.image = "https://jaiden2013yt.github.io/The-New-Section/Popcorn.png"
-    SP.image.scale = 0.07
+    SP.image.scale = 0.07 // we want it small, but the image i specified is large.
 
     //SP.debug = true;
     popcornList.push(SP)
