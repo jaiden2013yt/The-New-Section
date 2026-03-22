@@ -17,7 +17,6 @@ window.draggingElement = -1
 
     p.world.gravity.y = 25
 
-    popcornImg = loadImage("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg");
 
     let wallWidth = 15
     
@@ -79,7 +78,7 @@ window.draggingElement = -1
     SP.drag = 5
     SP.rotationDrag = 2
 
-    SP.image = popcornImg
+    SP.image = "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/410.svg"
     popcornList.push(SP)
   }
 
